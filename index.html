@@ -10,6 +10,51 @@
 <body>
 <fos-desktop>
 
-</fos-desktop>
+	<fos-icon href="w1">F</fos-icon>
+	<fos-icon href="w2">O</fos-icon>
+	<fos-icon href="w3">S</fos-icon>
+
+	<fos-window name="w1" title="Window 1">
+		<h2>Test 1</h2>
+	</fos-window>
+	
+	<fos-window name="w2" title="Window 2">
+		<h1>Hello</h1>
+		<p>How are you on this fine morning/afternoon/night?</p>
+		<p><a href="javascript:alert('hi');">Click here to say hi</a></p>
+	</fos-window>
+	
+	<fos-window name="w3" title="Window 2">
+		<fos-bar position="top">
+			<fos-menu name="File">
+				<fos-menu-item href="file1">File 1</fos-menu-item>
+				<fos-menu-item href="file2">File 2</fos-menu-item>
+			</fos-menu>
+		</fos-bar>
+		<br>
+		<fos-panel name="file1" selected>
+			<h1>Panel 1</h1>
+			<p>Hi, this is the panel one.</p>
+		</fos-panel>
+		<fos-panel name="file2">
+			<h1>Panel 2</h1>
+			<p>Hello again, this is the panel two.</p>
+		</fos-panel>
+	</fos-window>
+
+	<fos-bar>
+		<fos-menu name="Start">
+			<fos-menu-item href="w1">
+				Window 1
+			</fos-menu-item>
+			<fos-menu-item href="w2">
+				Window 2
+			</fos-menu-item>
+			<fos-menu-item href="w3">
+				Window 3
+			</fos-menu-item>
+		</fos-menu>
+	</fos-bar>
+
 </body>
 </html>
